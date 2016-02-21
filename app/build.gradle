@@ -1,13 +1,20 @@
 apply plugin: 'com.android.application'
 
+// GoogleAnalytics
+//apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+
 buildscript {
     repositories {
         mavenCentral()
         jcenter()
+        maven { url 'https://maven.fabric.io/public' }
     }
     dependencies {
         // GoogleAnalytics
         //classpath 'com.google.gms:google-services:2.0.0-alpha6'
+
+        classpath 'io.fabric.tools:gradle:1.+'
 
     }
 }
@@ -48,7 +55,15 @@ dependencies {
 
     // GoogleAnalytics
     //compile 'com.google.android.gms:play-services-analytics:8.4.0'
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+
+    compile project (':ViewPagerIndicatorLibrary')
 }
 
-// GoogleAnalytics
-//apply plugin: 'com.google.gms.google-services'
+repositories {
+    jcenter()
+    maven { url 'https://maven.fabric.io/public' }
+}

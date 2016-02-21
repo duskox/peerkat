@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="primaryDark">#1976D2</color>
+    <color name="primary">#2196F3</color>
+    <color name="accent">#FFEB3B</color>
+    <color name="accentDark">#FBC02D</color>
+    <color name="light_blue">#E3F2FD</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_light">#e0e0e0</color>
+    <color name="grey_dark">#505050</color>
+    <color name="grey_middle">#a0a0a0</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="text_primary">#de000000</color>
+    <color name="text_secondary">#8a000000</color>
+    <color name="text_hint">#42000000</color>
+
+    <color name="windowBackgroundColor">#E0F7FA</color>
+    <color name="navigationBarColor">#00BCD4</color>
+
+    <!-- scrims, center points are 3/10 towards end based on
+    http://www.google.com/design/spec/style/imagery.html#imagery-ui-integration -->
+    <color name="scrim_40_percent">#66000000</color>
+    <!-- center point if start is 40% -->
+    <color name="scrim_28_percent">#47000000</color>
+    <color name="scrim_10_percent">#19000000</color>
+    <!-- center point if start is 10% -->
+    <color name="scrim_7_percent">#12000000</color>
 </resources>
