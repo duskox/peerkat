@@ -39,4 +39,4 @@ proguard/
 captures/
 
 # Ignore kljucevi.xml gdje mi stoje osjetljivi API kljucevi
-/app/src/main/res/values/kljucevi.xml
+app/src/main/res/values/kljucevi.xml
