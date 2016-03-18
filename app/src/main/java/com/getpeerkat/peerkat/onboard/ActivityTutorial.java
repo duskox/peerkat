@@ -109,9 +109,9 @@ public class ActivityTutorial extends AppCompatActivity {
 //            animatePagerTransition(true); //This for some reason makes a page skip ahead one step?
             viewPager.setCurrentItem(viewPager.getCurrentItem()+1, true);
         } else {
-            Intent i = new Intent(this, ActivityRegister.class);
-            startActivity(i);
-            finish();
+//            Intent i = new Intent(this, ActivityRegister.class);
+//            startActivity(i);
+//            finish();
         }
     }
 
