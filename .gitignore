@@ -3,7 +3,8 @@
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
-/.idea/
+/.idea/misc.xml
+/.idea/**
 .DS_Store
 
 # Built application files
