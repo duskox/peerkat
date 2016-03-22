@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-// Android anotations
+// Android anotations plugin
 apply plugin: 'com.neenbedankt.android-apt'
 
 
@@ -11,6 +11,7 @@ buildscript {
     }
     dependencies {
 
+        // Android anotations
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
@@ -54,6 +55,10 @@ dependencies {
     // Dagger dependencies
     compile 'com.google.dagger:dagger:2.0.2'
     apt 'com.google.dagger:dagger-compiler:2.0.2'
+    provided 'javax.annotation:jsr250-api:1.0'
+
+    // Butterknife
+    compile 'com.jakewharton:butterknife:7.0.1'
 }
 
 repositories {

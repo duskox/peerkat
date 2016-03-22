@@ -5,6 +5,10 @@ import android.provider.Settings;
 import android.util.Log;
 
 
+import com.getpeerkat.peerkat.daggermodules.DaggerDataComponent;
+import com.getpeerkat.peerkat.daggermodules.DataComponent;
+import com.getpeerkat.peerkat.daggermodules.DataModule;
+
 import timber.log.Timber;
 
 /**
@@ -12,9 +16,15 @@ import timber.log.Timber;
  */
 public class PeerkatApp extends Application {
 
+    private static DataComponent dataComponent;
+
     @Override
     public void onCreate() {
         super.onCreate();
+
+        dataComponent = DaggerDataComponent.builder()
+                .dataModule(new DataModule(this))
+                .build();
 
         if (BuildConfig.DEBUG) {
             Timber.plant(new Timber.DebugTree());
@@ -31,5 +41,9 @@ public class PeerkatApp extends Application {
 
             // Implement a live logging here
         }
+    }
+
+    public static DataComponent getDataComponent() {
+        return dataComponent;
     }
 }
