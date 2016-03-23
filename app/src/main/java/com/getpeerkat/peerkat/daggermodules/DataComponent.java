@@ -1,7 +1,6 @@
 package com.getpeerkat.peerkat.daggermodules;
 
 import com.getpeerkat.peerkat.MainActivity;
-import com.getpeerkat.peerkat.data.PeerkatPreferences;
 
 import javax.inject.Singleton;
 
@@ -16,5 +15,4 @@ import dagger.Component;
 @Singleton
 public interface DataComponent {
         void inject(MainActivity activity);
-        void inject(PeerkatPreferences preferences);
 }

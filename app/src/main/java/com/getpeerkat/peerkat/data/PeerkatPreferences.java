@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import com.getpeerkat.peerkat.PeerkatApp;
 
 import javax.inject.Inject;
+import javax.inject.Singleton;
 
 /**
  * Created by dvorkapic on 21/03/16.
@@ -16,6 +17,7 @@ public class PeerkatPreferences {
 
     private SharedPreferences sharedPreferences;
 
+    @Singleton
     @Inject
     PeerkatPreferences(SharedPreferences sharedPreferences) {
         this.sharedPreferences = sharedPreferences;
